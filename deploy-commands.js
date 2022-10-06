@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({path: '../.env'})
 const {REST, SlashCommandBuilder, Routes} = require("discord.js")
 const clientId = process.env.CLIENTID
 const guildId = process.env.GUILDID
