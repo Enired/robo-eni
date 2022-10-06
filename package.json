@@ -1,0 +1,23 @@
+{
+  "name": "robo-eni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enired/robo-eni.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enired/robo-eni/issues"
+  },
+  "homepage": "https://github.com/Enired/robo-eni#readme",
+  "dependencies": {
+    "discord.js": "^14.5.0"
+  }
+}
