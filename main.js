@@ -17,10 +17,14 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply('Pong!');
   }
   else if (commandName === 'server') {
-    await interaction.reply('Server info.');
+    const guildName = interaction.guild.name
+    const totalMembers = interaction.guild.memberCount
+    await interaction.reply(`Server name: ${guildName}\nTotal members: ${totalMembers}`);
   }
   else if (commandName === 'user') {
-    await interaction.reply('User info');
+    const userTag = interaction.user.tag
+    const userId = interaction.user.id
+    await interaction.reply(`User Tag: ${userTag} \nUser Id: ${userId}`);
   }
 });
 
