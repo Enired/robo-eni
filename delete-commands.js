@@ -7,6 +7,6 @@ const token = process.env.TOKEN
 
 const rest = new REST({version: '10'}).setToken(token);
 
-rest.delete(Routes.applicationGuildCommand(clientId, guildId, args))
-	.then(() => console.log('Successfully deleted guild command'))
+rest.delete(Routes.applicationCommand(clientId, `${args}`))
+	.then(() => console.log('Successfully deleted application command'))
 	.catch(console.error);
