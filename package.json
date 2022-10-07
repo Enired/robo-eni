@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "cmddep": "node deploy-commands.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Enired/robo-eni#readme",
   "dependencies": {
+    "axios": "^1.1.2",
     "discord.js": "^14.5.0",
     "dotenv": "^16.0.3"
   }
